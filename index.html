@@ -453,103 +453,87 @@ even more memorable.
 </section>
 <!-- =========================
 SECTION 3 : WEDDING DETAILS
-========================= -->
+==============================
 
-<section id="details" class="section">
+<!-- Countdown -->
 
-<div class="container">
+<section>
 
-<div class="heading">
+<h2 class="title">
+Counting Down
+</h2>
 
-<h2>Wedding Details</h2>
-
-<p>With joyful hearts, we invite you to celebrate our special day.</p>
-
-</div>
-
-<div class="details-box">
-
-<div class="detail">
-
-<h3>Date</h3>
-
-<p>23 August 2026</p>
-
-</div>
-
-<div class="detail">
-
-<h3>Muhurtham</h3>
-
-<p>10:05 AM – 10:55 AM</p>
-
-</div>
-
-<div class="detail">
-
-<h3>Venue</h3>
-
-<p>
-Sri H D Devegowda Convention Hall<br>
-Near Railway Station,<br>
-KR Nagar
+<p class="subtitle">
+The beginning of our forever
 </p>
-
-</div>
-
-</div>
-
-<div class="countdown-title">
-
-<h2>Countdown</h2>
-
-</div>
 
 <div class="countdown">
 
-<div class="time-box">
-
-<span id="days">00</span>
-
-<small>Days</small>
-
+<div class="box">
+<div class="number" id="days">00</div>
+<div class="label">Days</div>
 </div>
 
-<div class="time-box">
-
-<span id="hours">00</span>
-
-<small>Hours</small>
-
+<div class="box">
+<div class="number" id="hours">00</div>
+<div class="label">Hours</div>
 </div>
 
-<div class="time-box">
-
-<span id="minutes">00</span>
-
-<small>Minutes</small>
-
+<div class="box">
+<div class="number" id="minutes">00</div>
+<div class="label">Minutes</div>
 </div>
 
-<div class="time-box">
-
-<span id="seconds">00</span>
-
-<small>Seconds</small>
-
+<div class="box">
+<div class="number" id="seconds">00</div>
+<div class="label">Seconds</div>
 </div>
 
 </div>
 
-<div class="location-btn">
+</section>
 
-<a href="https://maps.google.com/?q=Sri+H+D+Devegowda+Convention+Hall+KR+Nagar" target="_blank">
+<!-- Wedding Details -->
 
-View Location
+<section>
+
+<h2 class="title">
+Wedding Details
+</h2>
+
+<div class="card">
+
+<div class="date">
+23 August 2026
+</div>
+
+<div class="place">
+
+🕙 <b>Muhurtham</b><br>
+
+10:05 AM – 10:55 AM
+
+<br><br>
+
+📍 <b>Sri H D Devegowda Convention Hall</b>
+
+<br>
+
+Near Railway Station,
+
+KR Nagar
+
+</div>
+
+<a class="button"
+
+href="https://maps.google.com/?q=Sri+H+D+Devegowda+Convention+Hall+KR+Nagar"
+
+target="_blank">
+
+View Venue
 
 </a>
-
-</div>
 
 </div>
 
@@ -559,7 +543,7 @@ View Location
 
 .details-box{
 
-max-width:700px;
+max-width:500px;
 
 margin:40px auto;
 
@@ -721,132 +705,341 @@ background:#bf4b78;
 
 <script>
 
-const weddingDate = new Date("August 23, 2026 10:05:00").getTime();
+<!-- Closing Section -->
 
-setInterval(function(){
+<section>
 
-const now = new Date().getTime();
+<h2 class="title">
+See You There ❤️
+</h2>
 
-const distance = weddingDate - now;
+<div class="card">
 
-document.getElementById("days").innerHTML=Math.floor(distance/(1000*60*60*24));
+<p style="font-size:22px;line-height:2">
 
-document.getElementById("hours").innerHTML=Math.floor((distance%(1000*60*60*24))/(1000*60*60));
+Your presence will make our celebration
+more joyful and memorable.
 
-document.getElementById("minutes").innerHTML=Math.floor((distance%(1000*60*60))/(1000*60));
+<br><br>
 
-document.getElementById("seconds").innerHTML=Math.floor((distance%(1000*60))/1000);
-
-},1000);
-
-</script>
-<!-- Countdown -->
-<section class="section">
-    <h2>Countdown</h2>
-
-    <div class="countdown">
-        <div class="time-box">
-            <h3 id="days">00</h3>
-            <p>Days</p>
-        </div>
-
-        <div class="time-box">
-            <h3 id="hours">00</h3>
-            <p>Hours</p>
-        </div>
-
-        <div class="time-box">
-            <h3 id="minutes">00</h3>
-            <p>Minutes</p>
-        </div>
-
-        <div class="time-box">
-            <h3 id="seconds">00</h3>
-            <p>Seconds</p>
-        </div>
-    </div>
-</section>
-
-<!-- Map -->
-<section class="section">
-    <h2>Venue</h2>
-
-    <h3>Sri H D Devegowda Convention Hall</h3>
-
-    <p>Near Railway Station,<br>KR Nagar</p>
-
-    <a class="btn"
-    href="https://maps.google.com/?q=Sri+H+D+Devegowda+Convention+Hall+KR+Nagar"
-    target="_blank">
-
-    View Location
-
-    </a>
-</section>
-
-<!-- Music -->
-<button id="musicBtn" class="music-btn">
-🎵
-</button>
-
-<audio id="music" loop>
-    <source src="music.mp3" type="audio/mpeg">
-</audio>
-
-<!-- Closing -->
-<section class="section">
-
-<h2>We can't wait to celebrate with you!</h2>
-
-<p>
-
-Your love, blessings and presence
-
-will make our day
-
-even more special.
+We can't wait to celebrate
+our forever with you.
 
 </p>
 
-<h3 style="margin-top:25px; color:#c2185b;">
+<br>
 
-Chalana Prabhakar
+<h2 style="color:#c64b7c;font-family:'Cormorant Garamond',serif;font-size:45px;">
+
+Chalana ❤️ Nagarjuna
+
+</h2>
 
 <br>
 
-&
+<p style="font-size:20px">
 
-<br>
+23 August 2026
 
-Nagarjuna
+</p>
 
-</h3>
+</div>
 
 </section>
 
+<footer>
+
+Made with ❤️ for our loved ones
+
+</footer>
+
 <script>
 
-// Countdown
+// Countdown Timer
 
-const wedding = new Date("August 23, 2026 10:05:00").getTime();
+const weddingDate=new Date("August 23, 2026 10:05:00").getTime();
 
-setInterval(()=>{
+setInterval(function(){
 
 const now=new Date().getTime();
 
-const diff=wedding-now;
+const distance=weddingDate-now;
 
-document.getElementById("days").innerHTML=Math.floor(diff/(1000*60*60*24));
+const days=Math.floor(distance/(1000*60*60*24));
 
-document.getElementById("hours").innerHTML=Math.floor((diff%(1000*60*60*24))/(1000*60*60));
+const hours=Math.floor((distance%(1000*60*60*24))/(1000*60*60));
 
-document.getElementById("minutes").innerHTML=Math.floor((diff%(1000*60*60))/(1000*60));
+const minutes=Math.floor((distance%(1000*60*60))/(1000*60));
 
-document.getElementById("seconds").innerHTML=Math.floor((diff%(1000*60))/1000);
+const seconds=Math.floor((distance%(1000*60))/1000);
+
+document.getElementById("days").innerHTML=days;
+document.getElementById("hours").innerHTML=hours;
+document.getElementById("minutes").innerHTML=minutes;
+document.getElementById("seconds").innerHTML=seconds;
 
 },1000);
 
-// Music
+
+// Fade Animation
+
+const observer=new IntersectionObserver(entries=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.animate([
+
+{opacity:0,transform:"translateY(60px)"},
+
+{opacity:1,transform:"translateY(0)"}
+
+],{
+
+duration:900,
+
+fill:"forwards"
+
+});
+
+}
+
+});
+
+});
+
+document.querySelectorAll("section").forEach(el=>observer.observe(el));
+
+
+// Floating Petals
+
+for(let i=0;i<20;i++){
+
+let petal=document.createElement("div");
+
+petal.innerHTML="🌸";
+
+petal.style.position="fixed";
+
+petal.style.left=Math.random()*100+"vw";
+
+petal.style.top="-50px";
+
+petal.style.fontSize=(18+Math.random()*18)+"px";
+
+petal.style.opacity=.8;
+
+petal.style.pointerEvents="none";
+
+petal.style.animation=`fall ${6+Math.random()*6}s linear infinite`;
+
+petal.style.animationDelay=Math.random()*6+"s";
+
+document.body.appendChild(petal);
+
+}
+
+</script>
+
+<style>
+
+@keyframes fall{
+
+0%{
+
+transform:translateY(-100px) rotate(0deg);
+
+}
+
+100%{
+
+transform:translateY(120vh) rotate(360deg);
+
+}
+
+}
+
+</style>
+<!-- Floating Music Button (Music Disabled by Default) -->
+
+<button id="musicBtn">
+
+🎵
+
+</button>
+
+<audio id="music" loop>
+
+<!-- Add your own music.mp3 later -->
+
+<source src="music.mp3" type="audio/mpeg">
+
+</audio>
+
+<style>
+
+#musicBtn{
+
+position:fixed;
+
+right:20px;
+
+bottom:25px;
+
+width:60px;
+
+height:60px;
+
+border:none;
+
+border-radius:50%;
+
+background:rgba(255,255,255,.9);
+
+backdrop-filter:blur(15px);
+
+box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+font-size:26px;
+
+cursor:pointer;
+
+z-index:999;
+
+transition:.3s;
+
+}
+
+#musicBtn:hover{
+
+transform:scale(1.1);
+
+}
+
+.gallery img{
+
+cursor:pointer;
+
+}
+
+.viewer{
+
+position:fixed;
+
+left:0;
+
+top:0;
+
+width:100%;
+
+height:100%;
+
+background:rgba(0,0,0,.92);
+
+display:none;
+
+justify-content:center;
+
+align-items:center;
+
+z-index:9999;
+
+padding:20px;
+
+}
+
+.viewer img{
+
+max-width:95%;
+
+max-height:90%;
+
+border-radius:20px;
+
+box-shadow:0 15px 40px rgba(255,255,255,.15);
+
+animation:zoom .4s;
+
+}
+
+@keyframes zoom{
+
+from{
+
+transform:scale(.8);
+
+opacity:0;
+
+}
+
+to{
+
+transform:scale(1);
+
+opacity:1;
+
+}
+
+}
+
+.close{
+
+position:absolute;
+
+top:30px;
+
+right:35px;
+
+font-size:40px;
+
+color:white;
+
+cursor:pointer;
+
+font-family:Arial;
+
+}
+
+footer{
+
+background:linear-gradient(135deg,#ffffff,#fff6fb);
+
+}
+
+</style>
+
+<div class="viewer" id="viewer">
+
+<span class="close">&times;</span>
+
+<img id="preview">
+
+</div>
+
+<script>
+
+const viewer=document.getElementById("viewer");
+
+const preview=document.getElementById("preview");
+
+document.querySelectorAll(".gallery img").forEach(img=>{
+
+img.onclick=()=>{
+
+viewer.style.display="flex";
+
+preview.src=img.src;
+
+}
+
+});
+
+viewer.onclick=()=>{
+
+viewer.style.display="none";
+
+};
 
 const music=document.getElementById("music");
 
@@ -854,13 +1047,15 @@ const btn=document.getElementById("musicBtn");
 
 let playing=false;
 
-btn.onclick=function(){
+btn.onclick=function(e){
+
+e.stopPropagation();
 
 if(!playing){
 
 music.play();
 
-btn.innerHTML="🔊";
+btn.innerHTML="⏸";
 
 playing=true;
 
@@ -876,137 +1071,8 @@ playing=false;
 
 }
 
-// Floating Flowers
-
-for(let i=0;i<20;i++){
-
-let flower=document.createElement("div");
-
-flower.innerHTML="🌸";
-
-flower.style.position="fixed";
-
-flower.style.left=Math.random()*100+"vw";
-
-flower.style.top="-20px";
-
-flower.style.fontSize=(18+Math.random()*18)+"px";
-
-flower.style.animation=`fall ${6+Math.random()*8}s linear infinite`;
-
-flower.style.animationDelay=Math.random()*5+"s";
-
-flower.style.pointerEvents="none";
-
-document.body.appendChild(flower);
-
-}
-
 </script>
 
-<style>
-
-@keyframes fall{
-
-0%{
-
-transform:translateY(-20px) rotate(0deg);
-
-opacity:1;
-
-}
-
-100%{
-
-transform:translateY(110vh) rotate(360deg);
-
-opacity:.2;
-
-}
-
-}
-
-.music-btn{
-
-position:fixed;
-
-bottom:25px;
-
-right:20px;
-
-width:65px;
-
-height:65px;
-
-border:none;
-
-border-radius:50%;
-
-background:white;
-
-font-size:28px;
-
-box-shadow:0 10px 25px rgba(0,0,0,.2);
-
-cursor:pointer;
-
-z-index:999;
-
-}
-
-.countdown{
-
-display:grid;
-
-grid-template-columns:repeat(2,1fr);
-
-gap:15px;
-
-margin-top:20px;
-
-}
-
-.time-box{
-
-background:white;
-
-padding:18px;
-
-border-radius:18px;
-
-box-shadow:0 10px 30px rgba(0,0,0,.08);
-
-}
-
-.time-box h3{
-
-font-size:30px;
-
-color:#c2185b;
-
-}
-
-.btn{
-
-display:inline-block;
-
-margin-top:20px;
-
-padding:15px 35px;
-
-border-radius:40px;
-
-background:linear-gradient(45deg,#ff5ea8,#d81b60);
-
-color:white;
-
-text-decoration:none;
-
-font-weight:bold;
-
-}
-
-</style>
-
 </body>
+
 </html>
